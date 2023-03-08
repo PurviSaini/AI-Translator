@@ -1,0 +1,20 @@
+#btn{
+    color: #212529;
+    background-color:#FFC107;
+    border: lightgray 1px solid;
+}
+#btn:hover,textarea{
+    color:#FFC107;
+    background-color:#212529;
+    border: 2px solid #FFC107;
+}
+#translatedText{
+    border: #FFC107 2px dotted;
+    background-color: dark;
+    color: white;
+}
+
+.cookie{
+font-family: 'Cookie', cursive;
+font-size: 6rem;
+}
