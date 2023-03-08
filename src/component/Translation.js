@@ -1,4 +1,5 @@
-import "./Translation.css"
+import React from "react";
+import "./Translation.css";
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
@@ -23,7 +24,7 @@ const Translation = () => {
         frequency_penalty: 0.0,
         presence_penalty: 0.0,
       });
-    console.log(response["data"]["choices"][0]["text"]);
+    // console.log(response["data"]["choices"][0]["text"]);
     document.getElementById("translatedText").textContent=response["data"]["choices"][0]["text"];
   };
 
@@ -42,7 +43,7 @@ const Translation = () => {
         id="targetLanguage"
         onChange={(e) => lang=(e.target.value)}
       >
-        <option value="">Select</option>
+        <option value="">Select a Language</option>
         <option value="Spanish">Spanish</option>
         <option value="French">French</option>
         <option value="German">German</option>
